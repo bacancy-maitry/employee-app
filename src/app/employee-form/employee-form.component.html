@@ -1,0 +1,15 @@
+<h2> Employee-form </h2>
+
+First Name: <input type="text" name="firstName" placeholder="Enter First Name" [(ngModel)]="employeeObj.firstName" /> <br> <br>
+Last Name: <input type="text" name="lastName" placeholder="Enter Last Name" [(ngModel)]="employeeObj.lastName" /> <br> <br>
+Contact No: <input type="number" name="contactNo" placeholder="Enter Contact No" [(ngModel)]="employeeObj.contactNo" /> <br> <br>
+Role Type:  <select name="roleType" [(ngModel)]="employeeObj.roleType">
+              <option *ngFor="let value of roleTypeArray" value="{{value.type}}"> {{value.type}} </option>
+            </select> <br><br>
+
+<input type="button" value="Submit" (click)="addEmployee()" />
+
+
+<app-project-manager-table></app-project-manager-table>
+<app-developer-table></app-developer-table>
+<app-designer-table></app-designer-table>

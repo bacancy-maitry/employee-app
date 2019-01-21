@@ -1,0 +1,22 @@
+<hr>
+<p>
+  Project Manager Table
+</p>
+
+<table border="2">
+  <thead>
+    <th> FirstName </th>
+    <th> LastName </th>
+    <th> Contact No </th>
+    <th> Designation </th>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let data of projectManagerArray">
+      <td> {{data.firstName}} </td>
+      <td> {{data.lastName}} </td>
+      <td> {{data.contactNo}} </td>
+      <td> {{data.roleType}} </td>
+    </tr>
+  </tbody>
+</table>
